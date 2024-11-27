@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCart</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./images/Summer 1.png" type="image/x-icon">
+    <style>
+        .btn-primary {
+            background-color: #27e586;
+        }
+
+        .header-background {
+            background-color: #F9F6E2;
+        }
+
+        .card-background-color {
+            border-radius: 8px;
+            background-color: rgba(17, 17, 17, 0.05);
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+    <!-- -------------------Header section--------------- -->
+    <header class="bg-white shadow-sm fixed w-full z-10">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <img src="/images/logo.jpg" alt="CLEAN-UP Logo" class="w-10 h-10">
+                <h1 class="text-2xl font-bold text-green-600">MediCart</h1>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="medicine-request.html" class="text-gray-600 hover:text-green-600 transition duration-300">Medicine Request</a>
+                <a href="prescription.html" class="text-gray-600 hover:text-green-600 transition duration-300">Prescription</a>
+                <a href="#join" class="text-gray-600 hover:text-green-600 transition duration-300">Join Us</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="login.html" class="text-green-600 hover:text-green-700 transition duration-300">Log In</a>
+                <a href="sign-up.html"
+                    class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition duration-300">Sign
+                    Up</a>
+            </div>
+        </div>
+    </header>
+    <header class="grid grid-cols-1 lg:grid-cols-2 header-background">
+        <div class=" flex justify-center items-center text-center order-2 lg:order-1">
+            <div class="text-black ">
+                <h2 class="text-lg font-medium mb-6">---SALE FEVER---</h2>
+                <h1 class="text-3xl lg:text-5xl uppercase font-bold mb-10 lg:mb-14">Purchase TK 200 or<br>above & get
+                    <span class="text-[#27e58c]">20% off</span>
+                </h1>
+                <div class="mb-5">
+                    <p class="inline font-semibold mr-3">Use Promo Code</p>
+                    <button class="btn-primary text-white border-none py-2 px-6 rounded-lg">SELL200</button>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center items-center order-1 lg:order-2">
+            <img class="lg:w-9/12 md:w-1/2" src="images/main logo.jpg" alt="logo of summer sale">
+        </div>
+    </header>
+    <!------------------------------------- Main section------------------- -->
+    <main class="mx-10 lg:mx-60">
+        <!----------------------------------------All Card section ------------------------------------->
+        <section class="grid grid-cols-1 lg:flex gap-10 mt-28">
+            <section class="justify-center ">
+                <!-------------------------------------Section:1 Tablets section ----------------------------------->
+                <h1 class="text-black text-center text-3xl lg:text-4xl font-semibold mb-10 lg:w-1/5">Tablets</h1>
+                <section
+                    class="grid grid-cols-1 justify-items-center gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-6 lg:gap-8">
+                    <!-- card number 1 -->
+                    <div>
+                        <div onclick="On_Click('card-name-1','card-price-1')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/napa.jpg" alt="Wooden Spoons" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-1" class="text-xl text-black font-medium">Napa</h2>
+                                <p><span id="card-price-1">200.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 2 -->
+                    <div>
+                        <div onclick="On_Click('card-name-2','card-price-2')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/DISPRIN.jpg" alt="K. Accessories" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-2" class="text-xl text-black font-medium">Disprin</h2>
+                                <p><span id="card-price-2">250.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 3 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/LLevofox.jpg" alt="Home Cooker" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Levofox</h2>
+                                <p><span id="card-price-3">500.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 4 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/IRON COMPLEx.jpg" alt="Home Cooker" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Iron Complex</h2>
+                                <p><span id="card-price-3">400.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 5 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/Nutraflex.jpg" alt="Home Cooker" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Nutraflex</h2>
+                                <p><span id="card-price-3">300.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 6 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/TRox forte.jpg" alt="Home Cooker" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Trox Forte</h2>
+                                <p><span id="card-price-3">600.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 7 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/TRox forte.jpg" alt="Home Cooker" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Trox Forte</h2>
+                                <p><span id="card-price-3">600.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 8 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/TRox forte.jpg" alt="Home Cooker" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Trox Forte</h2>
+                                <p><span id="card-price-3">600.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 9 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/TRox forte.jpg" alt="Home Cooker" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Trox Forte</h2>
+                                <p><span id="card-price-3">600.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 10 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/TRox forte.jpg" alt="Home Cooker" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Trox Forte</h2>
+                                <p><span id="card-price-3">600.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 11 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/TRox forte.jpg" alt="Home Cooker" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Trox Forte</h2>
+                                <p><span id="card-price-3">600.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 12 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/TRox forte.jpg" alt="Home Cooker" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Trox Forte</h2>
+                                <p><span id="card-price-3">600.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 13 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/TRox forte.jpg" alt="Home Cooker" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Trox Forte</h2>
+                                <p><span id="card-price-3">600.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 14 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/TRox forte.jpg" alt="Home Cooker" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Trox Forte</h2>
+                                <p><span id="card-price-3">600.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 15 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/TRox forte.jpg" alt="Home Cooker" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Trox Forte</h2>
+                                <p><span id="card-price-3">600.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 16 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/TRox forte.jpg" alt="Home Cooker" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Trox Forte</h2>
+                                <p><span id="card-price-3">600.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 17 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/TRox forte.jpg" alt="Home Cooker" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Trox Forte</h2>
+                                <p><span id="card-price-3">600.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 18 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/TRox forte.jpg" alt="Home Cooker" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Trox Forte</h2>
+                                <p><span id="card-price-3">600.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 19 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/TRox forte.jpg" alt="Home Cooker" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Trox Forte</h2>
+                                <p><span id="card-price-3">600.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 20 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/TRox forte.jpg" alt="Home Cooker" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Trox Forte</h2>
+                                <p><span id="card-price-3">600.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 21 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/TRox forte.jpg" alt="Home Cooker" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Trox Forte</h2>
+                                <p><span id="card-price-3">600.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 22 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/TRox forte.jpg" alt="Home Cooker" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Trox Forte</h2>
+                                <p><span id="card-price-3">600.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 23 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/TRox forte.jpg" alt="Home Cooker" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Trox Forte</h2>
+                                <p><span id="card-price-3">600.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 24 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/TRox forte.jpg" alt="Home Cooker" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Trox Forte</h2>
+                                <p><span id="card-price-3">600.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 25 -->
+                    <div>
+                        <div onclick="On_Click('card-name-3','card-price-3')"
+                            class="card w-80 h-80  shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="/images/TRox forte.jpg" alt="Home Cooker" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-3" class="text-xl text-black font-medium">Trox Forte</h2>
+                                <p><span id="card-price-3">600.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-------------------------------------Section:2 Liquid section ---------------------->
+                <h1 class="text-black text-3xl text-center lg:text-4xl font-semibold mt-20 mb-10 lg:w-1/5">Sportswear
+                </h1>
+                <section
+                    class="grid grid-cols-1 justify-items-center gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-8">
+                    <!-- card number 1 -->
+                    <div>
+                        <div onclick="On_Click('card-name-4','card-price-4')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="images/prod4.png" alt="Sports Back Cap" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-4" class="text-xl text-black font-medium"></h2>
+                                <p><span id="card-price-4">59.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 2 -->
+                    <div>
+                        <div onclick="On_Click('card-name-5','card-price-5')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="images/prod5.png" alt="Full Jersey Set" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-5" class="text-xl text-black font-medium"></h2>
+                                <p><span id="card-price-5">65.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 3 -->
+                    <div>
+                        <div onclick="On_Click('card-name-6','card-price-6')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="images/prod6.png" alt="Sports shoes" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-6" class="text-xl text-black font-medium"></h2>
+                                <p><span id="card-price-6">79.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-------------------------------Section 3: Furniture section -------------------------------->
+                <h1 class="text-black text-3xl text-center lg:text-4xl font-semibold mt-20 mb-10 lg:w-1/5">
+                </h1>
+                <section
+                    class="grid grid-cols-1 justify-items-center mb-10 gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-8">
+                    <!-- card number 1 -->
+                    <div>
+                        <div onclick="On_Click('card-name-7','card-price-7')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="images/prod7.png" alt="Single Relax Chair" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-7" class="text-xl text-black font-medium"></h2>
+                                <p><span id="card-price-7">439.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 2 -->
+                    <div>
+                        <div onclick="On_Click('card-name-8','card-price-8')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="images/prod8.png" alt="Children play" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-8" class="text-xl text-black font-medium"></h2>
+                                <p><span id="card-price-8">339.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card number 3 -->
+                    <div>
+                        <div onclick="On_Click('card-name-9','card-price-9')"
+                            class="card w-80 h-80 shadow-xl text-center cursor-pointer">
+                            <figure class="card-background-color w-72 h-48 m-4 rounded-sm"><img class="p-4"
+                                    src="images/prod9.png" alt="Flexible Sofa" /></figure>
+                            <div class="rating rating-md justify-center">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <div class="card-bodytext">
+                                <h2 id="card-name-9" class="text-xl text-black font-medium"></h2>
+                                <p><span id="card-price-9">550.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <!-- Purchase bill count and coupon use section -->
+            <section>
+                <!----------- Have coupon section ------------>
+                <div class="card-background-color rounded-lg p-10 ">
+                    <h3 class="text-lg text-black mb-3 font-medium">Have coupon?</h3>
+                    <div class="border-black flex gap-0">
+                        <input id="coupon" style="border-radius: 10px 0px 0px 10px;"
+                            class="w-1/2 bg-white border-none px-2 lg:px-4 py-2" type="text" placeholder="coupon code">
+                        <button onclick="coupon()" id="coupon-btn" disabled="disabled"
+                            style="border-radius: 0px 10px 10px 0px;"
+                            class="btn border-none btn-primary px-4 py-2 text-white">Apply</button>
+                    </div>
+                </div>
+                <!-------------product adding section--------------->
+                <section class="card-background-color rounded-lg lg:p-10 mt-5">
+                    <div id="Entry" class="border-b-2 p-5 text-black font-medium">
+
+                    </div>
+                    <!---------------price counting section ------------------>
+                    <div class="border-b-2 lg:p-10 text-black font-medium text-center">
+                        <h1 class="font-medium mb-3">Total price: <span id="total-price" class="ml-5">0.00</span> TK
+                        </h1>
+                        <h1 class="font-medium mb-3">Discount : <span id="diccount-price" class="ml-6">0.00</span> TK
+                        </h1>
+                        <h1 class="font-medium mb-3">Total: <span id="total" class="ml-14">0.00</span> TK</h1>
+                    </div>
+                    <div class="flex justify-center mt-10 ">
+                        <button id="Purchase-btn" disabled="disabled"
+                            class="btn border-none btn-primary text-white px-10 lg:px-20 py-2 rounded-lg"
+                            onclick="my_modal_1.showModal()">Make Purchase</button>
+                        <dialog id="my_modal_1" class="modal">
+                            <form method="dialog" class="modal-box bg-white text-black ">
+                                <div class="flex justify-center items-center text-center">
+                                    <div class="p-10">
+                                        <img src="./images/congo.png" alt="">
+                                        <h3 class="font-bold text-lg">Congratulations</h3>
+                                        <p class="py-4 mb-5">Your Purchase the product</p>
+                                        <div>
+                                            <button onClick="window.location.reload();"
+                                                class="btn btn-primary border-none text-white px-5 py-2 rounded-lg">Go
+                                                Home</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </dialog>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer class="mt-20">
+    </footer>
+    <script src="scripts/utilities.js"></script>
+</body>
+
+</html>

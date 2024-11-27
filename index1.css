@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Header */
+.header {
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header-logo-img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.header-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #16a34a;
+}
+
+.header-nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.header-nav-item {
+    color: #6b7280;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.header-nav-item:hover {
+    color: #16a34a;
+}
+
+.header-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.header-action-login {
+    color: #16a34a;
+    font-weight: 500;
+}
+
+.header-action-signup {
+    background: #16a34a;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+}
+
+/* Hero Section */
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #f9f6e2;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.hero-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.hero-highlight {
+    color: #e527b2;
+}
+
+.hero-promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.hero-promo-text {
+    margin-right: 1rem;
+    font-weight: 500;
+}
+
+.hero-promo-btn {
+    background-color: #e527b2;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+/* Cards Section */
+.card-section {
+    padding: 2rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #000;
+    padding: 1rem;
+}
