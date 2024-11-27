@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCart</title>
+    <link rel="shortcut icon" href="./images/Summer 1.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index1.css">
+</head>
+
+<body>
+    <!-- -------------------Header section--------------- -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="/placeholder.svg" alt="CLEAN-UP Logo" class="header-logo-img">
+                <h1 class="header-title">MediCart</h1>
+            </div>
+            <nav class="header-nav">
+                <a href="#features" class="header-nav-item"></a>
+                <a href="medicine-request.html" class="header-nav-item">Medicine Request</a>
+                <a href="prescription.html" class="header-nav-item">Prescription</a>
+                <a href="#join" class="header-nav-item">Join Us</a>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="header-action-login">Log In</a>
+                <a href="#" class="header-action-signup">Sign Up</a>
+            </div>
+        </div>
+    </header>
+    <div class="hero-section">
+        <div class="hero-text">
+            <h2 class="hero-subtitle">---SALE FEVER---</h2>
+            <h1 class="hero-title">Purchase TK 200 or<br>above & get <span class="hero-highlight">20% off</span></h1>
+            <div class="hero-promo">
+                <p class="hero-promo-text">Use Promo Code</p>
+                <button class="hero-promo-btn">SELL200</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/Summer 1.png" alt="logo of summer sale" class="hero-image-img">
+        </div>
+    </div>
+    <!-- ---------------------Main Section--------------------- -->
+    <main class="main">
+        <!-- Cards Section -->
+        <section class="card-section">
+            <!-- Kitchenware Section -->
+            <div class="category">
+                <h1 class="category-title">Kitchenware</h1>
+                <div class="card-grid">
+                    <!-- Card 1 -->
+                    <div class="card" onclick="On_Click('card-name-1','card-price-1')">
+                        <div class="card-image">
+                            <img src="images/prod1.png" alt="Wooden Spoons">
+                        </div>
+                        <div class="card-rating">
+                            <span class="rating-star checked"></span>
+                            <span class="rating-star checked"></span>
+                            <span class="rating-star checked"></span>
+                            <span class="rating-star"></span>
+                            <span class="rating-star"></span>
+                        </div>
+                        <h2 id="card-name-1" class="card-name">Wooden Spoons</h2>
+                        <p class="card-price"><span id="card-price-1">39.00</span> TK</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="card" onclick="On_Click('card-name-2','card-price-2')">
+                        <div class="card-image">
+                            <img src="images/prod2.png" alt="K. Accessories">
+                        </div>
+                        <div class="card-rating">
+                            <span class="rating-star"></span>
+                            <span class="rating-star"></span>
+                            <span class="rating-star"></span>
+                            <span class="rating-star"></span>
+                            <span class="rating-star"></span>
+                        </div>
+                        <h2 id="card-name-2" class="card-name">K. Accessories</h2>
+                        <p class="card-price"><span id="card-price-2">25.00</span> TK</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="card" onclick="On_Click('card-name-3','card-price-3')">
+                        <div class="card-image">
+                            <img src="images/prod3.png" alt="Home Cooker">
+                        </div>
+                        <div class="card-rating">
+                            <span class="rating-star checked"></span>
+                            <span class="rating-star checked"></span>
+                            <span class="rating-star"></span>
+                            <span class="rating-star"></span>
+                            <span class="rating-star"></span>
+                        </div>
+                        <h2 id="card-name-3" class="card-name">Home Cooker</h2>
+                        <p class="card-price"><span id="card-price-3">50.00</span> TK</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+    </footer>
+    <script src="scripts/utilities.js"></script>
+</body>
+
+</html>
